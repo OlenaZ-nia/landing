@@ -22,6 +22,46 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
   </head>
   <body>
+    <header class="header">
+      <div class="header-container">
+        <ul class="header__social-list social-list list">
+          <li class="header__social-list__item social-list__item">
+            <a
+              class="social-link link"
+              href="https://telegram.org/?setln=uk"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="telegram page"
+            >
+              <svg class="social-link__svg telegram">
+                <use href="./images/symbol-defs.svg#icon-telegram-app"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__social-list__item social-list__item">
+            <a
+              class="social-link link"
+              href="https://www.viber.com/ru/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="viber page"
+            >
+              <svg class="social-link__svg viber">
+                <use href="./images/symbol-defs.svg#icon-viber"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <button type="button" class="basket-btn" data-action="open-basket">
+          <div class="basket-quantity">0</div>
+          <svg class="basket-btn__icon">
+            <use
+              href="./images/symbol-defs.svg#icon-business-comerce-delivery-shop-trolley_121443"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </header>
     <main id="main-content">
       <section class="hero">
         <div class="container">
@@ -97,9 +137,9 @@
             <p class="about-desc">З натуральної тканини</p>
           </li>
         </ul>
-        <button type="button" class="btn-order" data-sale="25%">
+        <!-- <button type="button" class="btn-order" data-sale="25%">
           Замовити зі знижкою
-        </button>
+        </button> -->
       </section>
 
       <section class="slider-section">
@@ -152,15 +192,20 @@
               <h2 class="title">Сукня в смужку</h2>
               <p class="model">Арт. 37814</p>
               <ul class="description-list">
-                <li>
-                  розміри: 42-44, 46-48 42-44 (ОГ 94-96, довжина-92), 46-48 (ОГ
-                  99-101, довжина-94).
+                <li class="description-item">
+                  <p>
+                    розміри: <span class="desc-size">42-44</span> (ОГ 94-96,
+                    довжина-92), <span class="desc-size">46-48</span> (ОГ
+                    99-101, довжина-94).
+                  </p>
                 </li>
-                <li>матеріал: льон.</li>
-                <li>колір: білий, чорний.</li>
+                <li class="description-item">матеріал: льон.</li>
+                <li class="description-item desc-color">
+                  колір: білий, чорний.
+                </li>
               </ul>
               <div class="model-price-wrapper">
-                <span class="model-price line">1000 грн</span>
+                <span class="model-price current">1000 грн</span>
                 <span class="model-price actual">750 грн</span>
               </div>
               <button type="button" class="btn-order" data-art="37814">
@@ -225,14 +270,17 @@
               <p class="model">Арт. 37812</p>
               <ul class="description-list">
                 <li>
-                  розміри: 42-44, 46-48 42-44 (ОГ 95-97, ОТ 72-74, довжина-124),
-                  46-48 (ОГ 100-102, ОТ 79-81, довжина-124).
+                  розміри: <span class="desc-size">42-44</span>(ОГ 95-97, ОТ
+                  72-74, довжина-124), <span class="desc-size">46-48</span>(ОГ
+                  100-102, ОТ 79-81, довжина-124).
                 </li>
                 <li>матеріал: льон.</li>
-                <li>колір: бежевий, блакинтний, малиновий.</li>
+                <li class="desc-color">
+                  колір: бежевий, блакинтний, малиновий.
+                </li>
               </ul>
               <div class="model-price-wrapper">
-                <span class="model-price line">1150 грн</span>
+                <span class="model-price current">1150 грн</span>
                 <span class="model-price actual">860 грн</span>
               </div>
               <button type="button" class="btn-order" data-art="37812">
@@ -294,19 +342,22 @@
               <p class="model">Арт. 37614</p>
               <ul class="description-list">
                 <li>
-                  розміри: 42, 44, 46, 48 42 (ОГ-88-92, ОБ-96-100, довжина-130,
-                  довжина рукава-30), 44 (ОГ-92-96, ОБ-100-104, довжина-130,
-                  довжина рукава-30), 46 ( ОГ-96-100, ОБ-104-108, довжина-130,
-                  довжина рукава-30), 48 (ОГ-100-104, ОБ-108-112, довжина-130,
-                  довжина рукава-30).
+                  розміри: <span class="desc-size">42</span> (ОГ-88-92,
+                  ОБ-96-100, довжина-130, довжина рукава-30),
+                  <span class="desc-size">44</span> (ОГ-92-96, ОБ-100-104,
+                  довжина-130, довжина рукава-30),
+                  <span class="desc-size">46</span> ( ОГ-96-100, ОБ-104-108,
+                  довжина-130, довжина рукава-30),
+                  <span class="desc-size">48</span> (ОГ-100-104, ОБ-108-112,
+                  довжина-130, довжина рукава-30).
                 </li>
                 <li>матеріал: софт.</li>
-                <li>
+                <li class="desc-color">
                   колір: блакитний, синій, білий, чорний горох, чорний квіток.
                 </li>
               </ul>
               <div class="model-price-wrapper">
-                <span class="model-price line">960 грн</span>
+                <span class="model-price current">960 грн</span>
                 <span class="model-price actual">720 грн</span>
               </div>
               <button type="button" class="btn-order" data-art="37614">
@@ -368,17 +419,22 @@
               <p class="model">Арт. 37604</p>
               <ul class="description-list">
                 <li>
-                  розміри: 42, 44, 46, 48 42 (ОГ-94, ОБ-100-108, довжина-116,
-                  довжина рукава-34) 44 (ОГ-98, ОБ-104-112, довжина-117, довжина
-                  рукава-34) 46 (ОГ-102, ОБ-108-116, довжина-118, довжина
-                  рукава-34) 48 (ОГ-106, ОБ-112-120, довжина-119, довжина
-                  рукава-34).
+                  розміри: <span class="desc-size">42</span> (ОГ-94, ОБ-100-108,
+                  довжина-116, довжина рукава-34)
+                  <span class="desc-size">44</span> (ОГ-98, ОБ-104-112,
+                  довжина-117, довжина рукава-34)
+                  <span class="desc-size">46</span> (ОГ-102, ОБ-108-116,
+                  довжина-118, довжина рукава-34)
+                  <span class="desc-size">48</span> (ОГ-106, ОБ-112-120,
+                  довжина-119, довжина рукава-34).
                 </li>
                 <li>матеріал: софт.</li>
-                <li>колір: рожевий, жовтий, білий, чорний.</li>
+                <li class="desc-color">
+                  колір: рожевий, жовтий, білий, чорний.
+                </li>
               </ul>
               <div class="model-price-wrapper">
-                <span class="model-price line">960 грн</span>
+                <span class="model-price current">960 грн</span>
                 <span class="model-price actual">720 грн</span>
               </div>
               <button type="button" class="btn-order" data-art="37604">
@@ -449,15 +505,16 @@
               <p class="model">Арт. 37609</p>
               <ul class="description-list">
                 <li>
-                  розміри: 42-44, 46-48 42-44 (ОГ-86-90, ОБ-90-96, довжина-92,
-                  довжина рукава-29), 46-48 (ОГ-92-98, ОБ-98-104, довжина-94,
-                  довжина рукава-30).
+                  розміри: <span class="desc-size">42-44</span> (ОГ-86-90,
+                  ОБ-90-96, довжина-92, довжина рукава-29),
+                  <span class="desc-size">46-48</span> (ОГ-92-98, ОБ-98-104,
+                  довжина-94, довжина рукава-30).
                 </li>
                 <li>матеріал: софт.</li>
-                <li>колір: синій, білий, чорний.</li>
+                <li class="desc-color">колір: синій, білий, чорний.</li>
               </ul>
               <div class="model-price-wrapper">
-                <span class="model-price line">939 грн</span>
+                <span class="model-price current">939 грн</span>
                 <span class="model-price actual">700 грн</span>
               </div>
               <button type="button" class="btn-order" data-art="37609">
@@ -586,20 +643,94 @@
 
     <div class="modal">
       <div class="modal__body">
-        <div class="modal__content">
+        <div
+          class="modal__content hidden"
+          role="dialog"
+          id="dialog1"
+          aria-labelledby="dialog1_label"
+          aria-modal="true"
+        >
           <button type="button" class="btn-close" data-action="close-modal">
             &#x2718;
           </button>
-          <form class="form js-order-form">
-            <p class="text-order">text</p>
+
+          <form class="form js-order-form" id="form1"></form>
+        </div>
+
+        <div
+          class="modal__content hidden"
+          role="dialog"
+          id="dialog2"
+          aria-labelledby="dialog2_label"
+          aria-modal="true"
+        >
+          <button type="button" class="btn-close" data-action="close-modal">
+            &#x2718;
+          </button>
+
+          <div class="table-container">
+            <form class="js-order-form" id="form2">
+              <table class="basket-table">
+                <caption id="dialog2_label">
+                  How I chose to spend my money. It is your basket
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col" class="col1">Артикул</th>
+                    <th scope="col" class="col2">Колір</th>
+                    <th scope="col" class="col3">Розмір</th>
+                    <th scope="col" class="col4">Кількість</th>
+                    <th scope="col" class="col5">Вартість (грн)</th>
+                    <th scope="col" class="col6">Видалити</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="5">Загальна сума до сплати</td>
+                    <td class="sum">
+                      <label
+                        ><input
+                          type="text"
+                          name="sum"
+                          id="sum"
+                          value="0"
+                          readonly
+                      /></label>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+              <button type="button" class="btnSub" data-action="continue">
+                Замовити
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="modal__content hidden"
+          role="dialog"
+          id="dialog3"
+          aria-labelledby="dialog3_label"
+          aria-modal="true"
+        >
+          <button type="button" class="btn-close" data-action="close-modal">
+            &#x2718;
+          </button>
+
+          <form class="form js-order-form" id="form3">
+            <h2 id="dialog3_label" class="modal-label">Оформленя замовлення</h2>
+            <p class="text-order">Замовлення №1 на суму</p>
+            <p>Ваші контактні дані</p>
             <div class="form-field">
               <label for="name">Ім'я</label>
               <input
                 type="text"
                 name="name"
                 id="name"
-                autofocus
                 class="input"
+                autofocus
               />
 
               <label for="tel">Телефон</label>
@@ -620,12 +751,14 @@
                 placeholder="ваш коментар"
               ></textarea>
             </div>
-            <button type="submit" class="btnSub">Замовити</button>
+            <button type="submit" class="btnSub" data-action="submit">
+              Замовити
+            </button>
           </form>
         </div>
       </div>
     </div>
-    <!-- <script src="js/index.js" type="module"></script> -->
+
     <script src="js/slider-plugin.js" type="module"></script>
     <script src="js/modal.js" type="module"></script>
   </body>

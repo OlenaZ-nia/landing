@@ -5,12 +5,12 @@ class Slider {
         this._bindEvents();
     }
 
-    _getRefs(root) {
-        const refs = {};
-        refs.controls = document.querySelector(`.${root} .buttons-arrow`);
-      refs.slides = document.querySelectorAll(`.${root} .slide-list__item`);
-        return refs;
-    }
+  _getRefs(root) {
+    const refs = {};
+    refs.controls = document.querySelector(`.${root} .buttons-arrow`);
+    refs.slides = document.querySelectorAll(`.${root} .slide-list__item`);
+    return refs;
+  }
 
     _bindEvents() {
     this._refs.controls.addEventListener(
@@ -20,7 +20,7 @@ class Slider {
   }
 
   _onControlsClick(e) {
-    // e.preventDefault();
+    e.preventDefault();
 
     if (e.target.nodeName === 'BUTTON') {
 
