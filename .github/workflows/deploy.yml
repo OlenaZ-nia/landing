@@ -3,6 +3,9 @@ name: Build and deploy to GitHub Pages
 on:
   push:
     branches: [main]
+env:
+  BOT_ID: ${{secrets.BOT_ID}}
+  CHAT_ID: ${{secrets.CHAT_ID}}
 
 jobs:
   build-and-deploy:
