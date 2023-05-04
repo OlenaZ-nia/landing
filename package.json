@@ -1,0 +1,31 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "landing ",
+  "scripts": {
+    "serve": "parcel ./src/index.html -p 4200 --open",
+    "build": "parcel build ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlenaZ-nia/landing.git"
+  },
+  "keywords": [
+    "js",
+    "parcel",
+    "html",
+    "css"
+  ],
+  "author": "Olena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlenaZ-nia/landing/issues"
+  },
+  "homepage": "https://github.com/OlenaZ-nia/landing#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "parcel-reporter-clean-dist": "^1.0.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
