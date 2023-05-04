@@ -226,9 +226,11 @@ function onFormSubmit(e) {
     let msg = encodeURI(getMsg(orderPost));
 
     //send order to telegram
-    sendRequest(msg)
-      .then(data => console.log('telegram', data))
-      .catch(err => console.log(err));
+    // sendRequest(msg)
+    //   .then(data => console.log('telegram', data))
+    //   .catch(err => console.log(err));
+
+    console.log('telegram', getMsg(orderPost));
 
     allListOrder = [];
     updateStateBasket();
