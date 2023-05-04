@@ -4,7 +4,7 @@
   "description": "landing ",
   "scripts": {
     "serve": "parcel ./src/index.html -p 4200 --open",
-    "build": "parcel build ./src/index.html"
+    "build": "parcel build ./src/index.html --public-url /landing/"
   },
   "repository": {
     "type": "git",
